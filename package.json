@@ -1,0 +1,60 @@
+{
+  "name": "uba-templates-multipage-app",
+  "version": "1.0.0",
+  "description": "This is a seed for web application built by webpack",
+  "scripts": {
+    "build": "node scripts/before-build.script.js && webpack --progress --colors --bail",
+    "dev": "node scripts/before-build.script.js && webpack --progress --colors --config ./webpack.dev.config.js",
+    "watch": "node scripts/before-build.script.js && webpack --progress --colors --watch --config ./webpack.dev.config.js",
+    "start": "webpack-dev-server --inline --progress --compress --devtool eval --content-base build/ --open",
+    "profile": "node scripts/before-build.script.js && webpack --colors --profile --display-modules",
+    "dll": "node scripts/before-build-dll.script.js && webpack --progress --colors --config ./webpack-dll.config.js",
+    "analyse": "webpack --json > ./build/stats.json && webpack-bundle-analyzer --port 8989 ./build/stats.json",
+    "analyze": "npm run analyse"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Yonyou FED",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-core": "^6.7.7",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-es2015-loose": "^7.0.0",
+    "bootstrap-webpack": "0.0.5",
+    "css-loader": "^0.23.1",
+    "ejs-loader": "^0.3.0",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^9.0.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-import": "^1.7.0",
+    "eslint-plugin-jsx-a11y": "^1.2.0",
+    "eslint-plugin-react": "^5.0.1",
+    "exports-loader": "^0.6.3",
+    "expose-loader": "^0.7.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "glob": "^7.1.1",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "imports-loader": "^0.6.5",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "postcss-loader": "^0.9.1",
+    "precss": "^1.4.0",
+    "rimraf": "^2.5.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0",
+    "webpack-bundle-analyzer": "^2.2.1",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.11.6",
+    "bootstrap": "^3.3",
+    "jquery": "^1.12.4"
+  }
+}
