@@ -1,7 +1,7 @@
 {
   "name": "uba-templates-multipage-app",
-  "version": "1.0.0",
-  "description": "This is a seed for web application built by webpack",
+  "version": "1.0.1",
+  "description": "a boilerplate for web application",
   "scripts": {
     "build": "node scripts/before-build.script.js && webpack --progress --colors --bail",
     "dev": "node scripts/before-build.script.js && webpack --progress --colors --config ./webpack.dev.config.js",
@@ -12,10 +12,6 @@
     "analyse": "webpack --json > ./build/stats.json && webpack-bundle-analyzer --port 8989 ./build/stats.json",
     "analyze": "npm run analyse"
   },
-  "repository": {
-    "type": "git"
-  },
-  "author": "Yonyou FED",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -56,5 +52,22 @@
     "babel-runtime": "^6.11.6",
     "bootstrap": "^3.3",
     "jquery": "^1.12.4"
-  }
+  },
+  "main": "webpack.config.js",
+  "keywords": [
+    "uba",
+    "boilerplate",
+    "webpack",
+    "multi-page",
+    "app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uba-templates/uba-templates-multipage-app.git"
+  },
+  "author": "GuoYongfeng",
+  "bugs": {
+    "url": "https://github.com/uba-templates/uba-templates-multipage-app/issues"
+  },
+  "homepage": "https://github.com/uba-templates/uba-templates-multipage-app#readme"
 }
