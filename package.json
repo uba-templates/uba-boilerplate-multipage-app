@@ -1,5 +1,5 @@
 {
-  "name": "uba-templates-multipage-app",
+  "name": "uba-boilerplate-multipage-app",
   "version": "1.0.1",
   "description": "a boilerplate for web application",
   "scripts": {
@@ -63,11 +63,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uba-templates/uba-templates-multipage-app.git"
+    "url": "git+https://github.com/uba-boilerplate/uba-boilerplate-multipage-app.git"
   },
   "author": "GuoYongfeng",
   "bugs": {
-    "url": "https://github.com/uba-templates/uba-templates-multipage-app/issues"
+    "url": "https://github.com/uba-boilerplate/uba-boilerplate-multipage-app/issues"
   },
-  "homepage": "https://github.com/uba-templates/uba-templates-multipage-app#readme"
+  "homepage": "https://github.com/uba-boilerplate/uba-boilerplate-multipage-app#readme"
 }
